@@ -7,6 +7,11 @@ import ProductList from './components/ProductList/ProductList';
 import Menu from './components/Menu/Menu';
 
 
+
+
+import { Button } from '@mui/material';
+
+
 function App() {
   const {onToggleButton, tg} = useTelegram();
   useEffect(() => {
@@ -20,6 +25,7 @@ function App() {
         <Route path={'ProductList'} element={<ProductList />}/>
         <Route index element={<Menu />}/>
       </Routes>
+      <Button icon={'LocalGroceryStore'}></Button>
     </div>
   );
 }
