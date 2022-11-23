@@ -8,8 +8,7 @@ import Menu from './components/Menu/Menu';
 
 
 
-
-import { Button } from '@mui/material';
+import Icon from '@mui/material/Icon';
 
 
 function App() {
@@ -25,7 +24,7 @@ function App() {
         <Route path={'ProductList'} element={<ProductList />}/>
         <Route index element={<Menu />}/>
       </Routes>
-      <Button icon={'LocalGroceryStore'}></Button>
+      <Icon>local_grocery_store</Icon>
     </div>
   );
 }
