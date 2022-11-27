@@ -4,3 +4,25 @@
     width: 100%;
     padding: 20px;
 }
+.expandedButton {
+    display: flex;
+    margin: 0.3rem;
+    padding: 1rem 1.3rem;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 1.5rem;
+    column-gap: 0.7rem;
+    color: #444444;
+    background: #aad8ff;
+    border: transparent;
+    border-radius: 15rem;
+    outline: none;
+    cursor: pointer;
+    transition: 0.23s;
+}
+.expandedButton:active {
+    color: white;
+    background: #008AFF;
+}

@@ -5,13 +5,10 @@ import { useTelegram } from './hooks/useTelegram';
 import { Route, Routes } from 'react-router-dom';
 import ProductList from './components/ProductList/ProductList';
 import Menu from './components/Menu/Menu';
-
-
-
-import Icon from '@mui/material/Icon';
-
+import { Button } from '@mui/material';
 
 function App() {
+
   const {onToggleButton, tg} = useTelegram();
   useEffect(() => {
     tg.ready();
@@ -24,7 +21,7 @@ function App() {
         <Route path={'ProductList'} element={<ProductList />}/>
         <Route index element={<Menu />}/>
       </Routes>
-      <Icon>local_grocery_store</Icon>
+      <Button></Button>
     </div>
   );
 }
